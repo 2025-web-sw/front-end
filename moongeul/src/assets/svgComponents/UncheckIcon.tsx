@@ -1,3 +1,4 @@
+import * as React from "react";
 import type { SVGProps } from "react";
 const SvgUncheckIcon = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" viewBox="0 0 25 24" {...props}><mask id="uncheck-icon_svg__a" width={25} height={24} x={0} y={0} maskUnits="userSpaceOnUse" style={{
     maskType: "alpha"
