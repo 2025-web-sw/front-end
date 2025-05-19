@@ -61,9 +61,7 @@ const NavBar = () => {
   }, [path])
 
   return (
-    <nav
-      className={'bg-deep-dark-gray fixed right-0 bottom-0 left-0 flex w-full justify-between px-6 py-1 pb-[1.438rem]'}
-    >
+    <nav className={'fixed right-0 bottom-0 left-0 flex w-full justify-between bg-black px-6 py-1 pb-[1.438rem]'}>
       {navContents.map((content) => {
         return (
           <div

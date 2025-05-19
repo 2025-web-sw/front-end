@@ -1,17 +1,18 @@
 import './App.css'
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Home from "./pages/Home.tsx";
-import MyPage from "./pages/MyPage.tsx";
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home.tsx'
+import MyPage from './pages/MyPage.tsx'
 import Search from './pages/Search.tsx'
 import Recommend from './pages/Recommend.tsx'
 import Write from './pages/Write.tsx'
+import PostDetail from './pages/PostDetail.tsx'
 
 function App() {
-
   return (
     <BrowserRouter>
-      <Routes >
+      <Routes>
         <Route path="/home" element={<Home />} />
+        <Route path="/home/:postId" element={<PostDetail />} />
         <Route path="/mypage" element={<MyPage />} />
         <Route path="/search" element={<Search />} />
         <Route path="/recommend" element={<Recommend />} />

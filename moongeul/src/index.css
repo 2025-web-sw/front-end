@@ -1,7 +1,7 @@
 @import url('https://fonts.adobe.com/fonts/handsome-pro');
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
 
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @font-face {
   font-family: 'Pretendard Variable';
@@ -12,15 +12,15 @@
 /* tailwindCSS에서 해당 color들을 사용할 수 있도록 변경 */
 /* :root에 선언된 애들을 사용하고 있어서 그대로 뒀습니다. 아래와 같이 @theme에 선언해주면 tailwindcss처럼 사용할 수 있어서 @theme도 만들었습니다. */
 @theme {
-  --color-brand-color: #FF6E1F;
+  --color-brand-color: #ff6e1f;
 
   --color-black: #141414;
   --color-deep-dark-gray: #282828;
   --color-dark-gray: #646464;
-  --color-light-gray: #CACACA;
+  --color-light-gray: #cacaca;
   --color-white: #ffffff;
 
-  --color-background: #ECECEC;
+  --color-background: #ececec;
 
   --shadow-middlemodal: 0px 4px 50px 0px #0000000d;
   --shadow-location-search: 0px 4px 28px 0px #0000000d;
@@ -29,7 +29,7 @@
 /* 전역 폰트 스타일 */
 body {
   font-family: 'Handsome Pro', Pretendard, 'Pretendard Variable', sans-serif;
-  background-color: #ECECEC;
+  background-color: #ececec;
   color: #000000;
 }
 
@@ -149,7 +149,7 @@ body {
   align-items: center;
   gap: 8px;
   border-radius: 999px;
-  background: var(--color-brand-color, #FF6E1F);
+  background: var(--color-brand-color, #ff6e1f);
   font-family: Pretendard, serif;
   font-size: 14px;
   font-style: normal;
@@ -167,8 +167,8 @@ body {
   gap: 8px;
   flex-shrink: 0;
   border-radius: 999px;
-  border: 1px solid var(--color-light-gray, #CACACA);
-  background: var(--color-white, #FFF);
+  border: 1px solid var(--color-light-gray, #cacaca);
+  background: var(--color-white, #fff);
 
   font-family: Pretendard, serif;
   font-size: 14px;
@@ -209,7 +209,7 @@ body {
   gap: 12px;
   flex-shrink: 0;
   border-radius: 999px;
-  background: var(--color-light-gray, #CACACA);
+  background: var(--color-light-gray, #cacaca);
 
   font-family: Pretendard, serif;
   font-size: 14px;
@@ -229,8 +229,8 @@ body {
   gap: 12px;
   flex-shrink: 0;
   border-radius: 999px;
-  border: 1px solid var(--color-light-gray, #CACACA);
-  background: var(--color-white, #FFF);
+  border: 1px solid var(--color-light-gray, #cacaca);
+  background: var(--color-white, #fff);
 
   font-family: Pretendard, serif;
   font-size: 14px;
@@ -250,8 +250,8 @@ body {
   gap: 4px;
   flex-shrink: 0;
   border-radius: 999px;
-  border: 1px solid var(--color-brand-color, #FF6E1F);
-  background: var(--color-white, #FFF);
+  border: 1px solid var(--color-brand-color, #ff6e1f);
+  background: var(--color-white, #fff);
 
   font-family: Pretendard, serif;
   font-size: 14px;
@@ -271,7 +271,7 @@ body {
   gap: 8px;
   flex-shrink: 0;
   border-radius: 999px;
-  background: var(--color-brand-color, #FF6E1F);
+  background: var(--color-brand-color, #ff6e1f);
 
   font-family: Pretendard, serif;
   font-size: 14px;
@@ -311,8 +311,8 @@ body {
   gap: 8px;
   flex-shrink: 0;
   border-radius: 999px;
-  border: 1px solid var(--color-light-gray, #CACACA);
-  background: var(--color-white, #FFF);
+  border: 1px solid var(--color-light-gray, #cacaca);
+  background: var(--color-white, #fff);
 
   font-family: Pretendard, serif;
   font-size: 14px;
@@ -329,7 +329,7 @@ body {
   align-items: center;
   gap: 8px;
   border-radius: 999px;
-  background: var(--color-white, #FFF);
+  background: var(--color-white, #fff);
 
   font-family: Pretendard, serif;
   font-size: 14px;
@@ -348,8 +348,8 @@ body {
   align-items: center;
   gap: 8px;
   border-radius: 8px;
-  border: 1px solid var(--color-light-gray, #CACACA);
-  background: #FFF;
+  border: 1px solid var(--color-light-gray, #cacaca);
+  background: #fff;
 
   font-family: Pretendard, serif;
   font-size: 14px;

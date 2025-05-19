@@ -1,5 +1,5 @@
-import type { HeaderType } from '../../type/common.ts'
-import { LeftArrowIcon } from '../../assets/svgComponents/index.ts'
+import type { HeaderType } from '../../types/common.ts'
+import { AlarmIcon, LeftArrowIcon } from '../../assets/svgComponents/index.ts'
 import type { ReactNode } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -31,6 +31,13 @@ const Header = (props: Props) => {
             <div className="h-[1.125rem] w-[1.125rem]"></div>
           </div>
         )
+      case 'HOME':
+        return (
+          <div className="flex justify-between px-5 py-3">
+            <div className="head-bold-22 text-white">Logo</div>
+            <AlarmIcon width={32} height={32} />
+          </div>
+        )
       default:
         return (
           <div className="flex justify-start px-5 py-[0.719rem]">
@@ -41,7 +48,11 @@ const Header = (props: Props) => {
   }
 
   return (
-    <header className="bg-background fixed top-0 right-0 left-0 z-10 pt-[2.813rem]">{renderHeader(headerType)}</header>
+    <header
+      className={`${headerType === 'HOME' ? 'bg-black' : 'bg-background'} fixed top-0 right-0 left-0 z-10 pt-[2.813rem]`}
+    >
+      {renderHeader(headerType)}
+    </header>
   )
 }
 export default Header
