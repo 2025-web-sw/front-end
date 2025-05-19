@@ -7,9 +7,10 @@ interface Props {
   headerType: HeaderType
   children?: ReactNode
   onBack?: () => void
+  rightComponent?: React.ReactNode
 }
 const Header = (props: Props) => {
-  const { headerType, children, onBack } = props
+  const { headerType, children, onBack, rightComponent } = props
   const navigate = useNavigate()
   const renderHeader = (headerType: HeaderType) => {
     switch (headerType) {
@@ -28,7 +29,7 @@ const Header = (props: Props) => {
               height={18}
             />
             <div className="title-regular-14">{children}</div>
-            <div className="h-[1.125rem] w-[1.125rem]"></div>
+            {rightComponent ? rightComponent : <div className="h-[1.125rem] w-[1.125rem]"></div>}
           </div>
         )
       case 'HOME':
