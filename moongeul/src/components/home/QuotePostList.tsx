@@ -8,7 +8,7 @@ interface Props {
 const QuotePostList = (props: Props) => {
   const { onClick } = props
   return (
-    <div className={'border-dark-gray flex flex-col gap-y-1 border-t'}>
+    <div className="border-dark-gray flex flex-col gap-y-1 border-t">
       <section className="flex justify-between py-3">
         <h3 className="title-medium-16">위 글을 인용한 글</h3>
         <button onClick={onClick} className="body-regular-14 text-dark-gray flex items-center gap-x-1">

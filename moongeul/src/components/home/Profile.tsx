@@ -12,7 +12,7 @@ const Profile = ({
   return (
     <div className="flex items-center justify-between">
       <div className="flex items-center gap-x-2">
-        <div className="flex h-[52px] w-[52px] items-center justify-center overflow-hidden">
+        <div className="flex h-[3.25rem] w-[3.25rem] items-center justify-center overflow-hidden">
           <img src={profileImage} className="h-full w-full rounded-full object-cover" alt="프로필 이미지" />
         </div>
         <div className="flex flex-col">

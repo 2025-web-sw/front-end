@@ -13,7 +13,7 @@ const QuotePostTotalPage = (props: Props) => {
       <Header headerType={'DYNAMIC'} onBack={() => setIsQuotePostTotalPageOpen(false)}>
         인용한 글
       </Header>
-      <div className={'h-[86px]'} />
+      <div className={'h-[5.375rem]'} />
       <section className="w-full">
         <Post postId={2}>
           <Post.Profile postType={'감상평'} nickName={'rusia9217'} profileImage={'/profile.jpg'} />

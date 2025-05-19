@@ -53,7 +53,7 @@ const PostDetail = () => {
             likeCount={5}
             commentCount={7}
             quoteCount={3}
-            setIsQuotePostTotalPageOpen={setIsQuotePostTotalPageOpen}
+            onClick={() => setIsQuotePostTotalPageOpen(!isQuotePostTotalPageOpen)}
           />
         </>
       )}
