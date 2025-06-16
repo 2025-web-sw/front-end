@@ -1,9 +1,7 @@
 import {
-  SelectedBookIcon,
   SelectedHomeIcon,
   SelectedSearchIcon,
   SelectedWriteIcon,
-  UnselectedBookIcon,
   UnselectedHomeIcon,
   UnselectedSearchIcon,
   UnselectedWriteIcon,
@@ -33,12 +31,6 @@ const NavBar = () => {
       selectedIcon: <SelectedWriteIcon width={40} height={40} />,
       unselectedHomeIcon: <UnselectedWriteIcon width={40} height={40} />,
       router: '/write',
-    },
-    {
-      content: '추천',
-      selectedIcon: <SelectedBookIcon width={40} height={40} />,
-      unselectedHomeIcon: <UnselectedBookIcon width={40} height={40} />,
-      router: '/recommend',
     },
     {
       content: 'My',

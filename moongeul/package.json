@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "svgr": "svgr --icon --typescript --no-prettier --out-dir src/assets/svgComponents public/common",
+    "svgr": "svgr --icon --typescript --no-prettier --out-dir src/assets/svgComponents public/common --ignore-existing",
     "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
     "format": "prettier --write ."
   },

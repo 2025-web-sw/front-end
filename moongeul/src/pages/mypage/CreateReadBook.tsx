@@ -26,10 +26,6 @@ const CreateReadBook = ({ onClick, setReadBookIdList }: CreateReadBookProps) => 
     })
   }, [inputValue])
 
-  useEffect(() => {
-    console.log('createReadBook', createReadBook)
-  }, [createReadBook])
-
   return (
     <main>
       <Header headerType={'DYNAMIC'}>읽은 책 추가</Header>

@@ -9,9 +9,9 @@ const PostMeta = () => {
       </div>
       <div className="flex gap-x-1">
         <div className="tag-chip">#따뜻함</div>
-        <div className="tag-chip">#따뜻함</div>
-        <div className="tag-chip">#따뜻함</div>
-        <div className="tag-chip">#따뜻함</div>
+        <div className="tag-chip">#행복</div>
+        <div className="tag-chip">#밝음</div>
+        <div className="tag-chip">#기쁨</div>
       </div>
       <div className="caption-1 text-dark-gray">1월 12일</div>
     </div>

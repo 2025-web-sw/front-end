@@ -13,7 +13,7 @@ const ReadPage = () => {
   const [isCreateReadBookPageOpen, setIsCreateReadBookPageOpen] = useState(false)
 
   useEffect(() => {
-    let isMounted = true // 마운트 상태 확인
+    let isMounted = true
 
     const fetchData = async () => {
       try {
@@ -28,7 +28,7 @@ const ReadPage = () => {
     fetchData()
 
     return () => {
-      isMounted = false // 언마운트되면 상태 업데이트 막음
+      isMounted = false
     }
   }, [])
 
@@ -47,10 +47,9 @@ const ReadPage = () => {
           read_date: readBookIdList[index].read_date,
         }))
 
-        console.log('📚 병합된 도서 리스트:', merged)
         setBookState({ readBookList: merged })
       } catch (error) {
-        console.error('🚨 오류 발생:', error)
+        console.error('오류:', error)
       }
     }
 

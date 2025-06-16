@@ -1,9 +1,9 @@
 import { WhiteCommentIcon, WhiteHeartIcon, WhiteQuoteIcon } from '../../assets/svgComponents/index.ts'
 
 interface Props {
-  likeCount: number
-  commentCount: number
-  quoteCount: number
+  likeCount: number | undefined
+  commentCount: number | undefined
+  quoteCount: number | undefined
   onClick: () => void
 }
 
